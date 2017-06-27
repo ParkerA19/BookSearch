@@ -35,6 +35,7 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
             tvTitle = (TextView)itemView.findViewById(R.id.tvTitle);
             tvAuthor = (TextView)itemView.findViewById(R.id.tvAuthor);
         }
+
     }
 
     public BookAdapter(Context context, ArrayList<Book> aBooks) {
@@ -72,6 +73,8 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
                 .into(viewHolder.ivCover);
         // Return the completed view to render on screen
     }
+
+
 
     // Returns the total count of items in the list
     @Override
